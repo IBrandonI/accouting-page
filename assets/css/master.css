@@ -1,0 +1,372 @@
+/* Letra para encabezado Poppins, preferiblemente Thin 100
+    Paleta de colores:
+    Space Cadet: #151E3F
+    Oxford Blue: #
+    Blue (Munsell): #1B9AAA
+    Mint Cream: #EBF5EE
+    Spring green: #00FF7F
+*/
+
+body{
+    background-color: #030027;
+    color:#ffffff;
+}
+
+a:link, a:visited{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#1B9AAA;
+
+}
+
+#facebook:hover{
+    color: #0866ff;
+}
+
+#whatsapp:hover{
+    color:#25D366
+}
+.navbar-superior{
+    display: flex;
+    position:fixed;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 2rem;
+    width: 100%;
+    align-items: center;
+    background-color: #151E3F;
+    color: white;
+}
+
+.navbar-superior > h2:hover{
+    color:#1B9AAA;
+}
+
+.navbar-inferior {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #151E3F;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0; /* Cambié esto a 0 para evitar márgenes indeseados */
+    width: 100%;
+    color: white;
+    position: fixed; /* Para fijar la barra en la parte inferior */
+    bottom: 0; /* Para que esté pegada al fondo */
+    left: 0; /* Asegúrate de que esté alineada a la izquierda */
+    z-index: 1000; /* Para que esté por encima de otros elementos */
+}
+
+
+.hero{
+    width:100%;
+    height: 85vh;
+}
+
+.quienes-somos > h3{
+    font-size: 40px;
+    font-family: "Hammersmith One";
+}
+
+.quienes-somos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:85vh;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.servicios > h2{
+    font-size: 43px;
+    font-family: "Open Sans";
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.servicios-grid{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+.descripcion{
+    max-width: 50%;
+}
+
+.imagen{
+    background-color: blue;
+    max-width: 40%;
+}
+
+.visitanos{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre-ubicaciones{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    font-family: "Opens Sans";
+}
+
+.img-ubicaciones{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.web-hidden{
+    display: none;
+}
+
+
+.contact-button{
+    position: fixed;
+    bottom: 13vh; /* Distancia desde la parte inferior de la ventana */
+    right: 5vh; /* Distancia desde la parte derecha de la ventana */
+    padding: 1.3rem; /* Espaciado interno */
+    font-family: "Hammersmith One";
+    font-size: 1.2rem; /* Tamaño del texto */
+    background-color: #1B9AAA; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 3rem; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    height: 11.5vh;
+    width: 29vh;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.contact-button:hover{
+    background-color:darkturquoise;
+}
+
+
+
+@media(max-width: 480px) {
+
+    .contact-button{
+        position: fixed;
+        bottom: 6vh; /* Distancia desde la parte inferior de la ventana */
+        right: 3vh; /* Distancia desde la parte derecha de la ventana */
+        padding: 1.3rem; /* Espaciado interno */
+        font-size: 1.2rem; /* Tamaño del texto */
+        background-color: #1B9AAA; /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        border-radius: 3rem; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor a mano */
+        height: 11.5vh;
+        width: 30vw;
+        transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    }
+
+    .mobile-hidden{
+        display: none;
+    }
+
+    .navbar-superior{
+        display: flex;
+        position:fixed;
+        justify-content: flex-start;
+        flex-direction: row;
+        
+        width: 100%;
+    
+        background-color: #151E3F;
+        color: white;
+    }
+    
+    .navbar-inferior{
+        display: none;
+    }
+    
+    .hero{
+        width:100%;
+        height: 50vh;
+    }
+    
+    .quienes-somos > h3{
+        font-size: 5.5vw;
+    }
+
+    .quienes-somos{
+        display: block;
+        align-items: center;
+        align-content: space-evenly;
+        width: 100%;
+        min-height: 20vh;
+        max-height:42vh;    
+        padding-top:1%;
+    }
+    
+    .servicios > h2{
+        font-size: 9vw;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 40vh;
+        max-height: 58vh;
+    }
+    
+    .servicios-grid{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descripcion {
+        font-size: 5vw;
+    }
+    
+    .descripcion{
+        min-width: 80%;
+    }
+    
+    .imagen{
+        background-color: blue;
+        min-width: 80%;
+        min-height: 30%;
+        max-height: 50%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    
+    .visitanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .nombre-ubicaciones{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+    
+    .img-ubicaciones > h4{
+        font-size: 5vw;
+    }
+
+    .img-ubicaciones{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    .web-hidden{
+        display: inline;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .navbar-superior {
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 1.2rem; /* Ajustar el tamaño de fuente */
+        }
+    
+        .hero {
+            height: 70vh; /* Ajustar la altura de la imagen */
+        }
+    
+        .quienes-somos {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    
+        .servicios-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .descripcion {
+            max-width: 80%; /* Reducir el tamaño de la descripción */
+            font-size: 1.1rem;
+        }
+    
+        .imagen {
+            max-width: 60%;
+            height: auto;
+        }
+    
+        .contact-button {
+            bottom: 10vh;
+            right: 5vh;
+            height: 10vh;
+            width: 20vh;
+        }
+    }
+
+    @media (max-width: 767px) and (orientation: landscape) {
+        .navbar-superior {
+            justify-content: space-around;
+            font-size: 1rem;
+        }
+    
+        .hero {
+            height: 40vh; /* Reducir la altura */
+        }
+    
+        .quienes-somos > h3 {
+            font-size: 4.5vw;
+        }
+    
+        .quienes-somos {
+            padding: 0 5%;
+            height: auto;
+        }
+    
+        .servicios > h2 {
+            font-size: 7vw;
+        }
+    
+        .servicios-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .descripcion {
+            font-size: 4vw;
+            text-align: center;
+        }
+    
+        .imagen {
+            max-width: 80%;
+            height: auto;
+            margin: 2vh 0;
+        }
+    
+        .contact-button {
+            bottom: 5vh;
+            right: 3vh;
+            width: 25vh;
+        }
+    }
+    
+
+}
