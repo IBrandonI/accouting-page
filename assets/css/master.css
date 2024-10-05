@@ -70,7 +70,7 @@ a:hover{
     height: 85vh;
 }
 
-.quienes-somos > h3{
+.quienes-somos > p{
     font-size: 40px;
     font-family: "Hammersmith One";
 }
@@ -86,7 +86,7 @@ a:hover{
     padding-right: 15%;
 }
 
-.servicios > h2{
+.servicios > p{
     font-size: 43px;
     font-family: "Open Sans";
 }
@@ -111,7 +111,9 @@ a:hover{
 
 .imagen{
     background-color: blue;
-    max-width: 40%;
+    max-width: 40vw;
+    max-height: 50vh;
+    min-width: 25vw;
 }
 
 .visitanos{
@@ -163,7 +165,7 @@ a:hover{
 
 
 @media(max-width: 480px) {
-
+    /*Movil*/
     .contact-button{
         position: fixed;
         bottom: 6vh; /* Distancia desde la parte inferior de la ventana */
@@ -205,7 +207,7 @@ a:hover{
         height: 50vh;
     }
     
-    .quienes-somos > h3{
+    .quienes-somos > p{
         font-size: 5.5vw;
     }
 
@@ -214,12 +216,12 @@ a:hover{
         align-items: center;
         align-content: space-evenly;
         width: 100%;
-        min-height: 20vh;
-        max-height:42vh;    
-        padding-top:1%;
+        height: fit-content;  
+
+        padding-top:5%;
     }
     
-    .servicios > h2{
+    .servicios > p{
         font-size: 9vw;
     }
 
@@ -228,8 +230,8 @@ a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 40vh;
-        max-height: 58vh;
+        height: fit-content;
+        margin-top: 0;
     }
     
     .servicios-grid{
@@ -251,7 +253,7 @@ a:hover{
         background-color: blue;
         min-width: 80%;
         min-height: 30%;
-        max-height: 50%;
+        max-height: 20vh;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
@@ -322,51 +324,51 @@ a:hover{
         }
     }
 
-    @media (max-width: 767px) and (orientation: landscape) {
-        .navbar-superior {
-            justify-content: space-around;
-            font-size: 1rem;
-        }
-    
-        .hero {
-            height: 40vh; /* Reducir la altura */
-        }
-    
-        .quienes-somos > h3 {
-            font-size: 4.5vw;
-        }
-    
-        .quienes-somos {
-            padding: 0 5%;
-            height: auto;
-        }
-    
-        .servicios > h2 {
-            font-size: 7vw;
-        }
-    
-        .servicios-grid {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .descripcion {
-            font-size: 4vw;
-            text-align: center;
-        }
-    
-        .imagen {
-            max-width: 80%;
-            height: auto;
-            margin: 2vh 0;
-        }
-    
-        .contact-button {
-            bottom: 5vh;
-            right: 3vh;
-            width: 25vh;
-        }
-    }
-    
+}
 
+@media (min-width: 647px) and (max-width: 767px) and (orientation: landscape) {
+    .navbar-superior {
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+
+    .hero {
+        height: 40vh; /* Reducir la altura */
+    }
+
+    .quienes-somos > p {
+        font-size: 3.5vw;
+    }
+
+    .quienes-somos {
+        padding: 0 5%;
+        height: 20vh;
+    }
+
+    .servicios > p {
+        font-size: 4.5vw;
+        color:red;
+    }
+
+    .servicios-grid {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .descripcion {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .imagen {
+        max-width: 40%;
+        height: auto;
+        margin: 2vh 0;
+    }
+
+    .contact-button {
+        bottom: 5vh;
+        right: 3vh;
+        width: 25vh;
+    }
 }
