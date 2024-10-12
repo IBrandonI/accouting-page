@@ -294,48 +294,10 @@ a:hover{
         display: inline;
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .navbar-superior {
-            flex-direction: row;
-            justify-content: space-around;
-            font-size: 1.2rem; /* Ajustar el tamaño de fuente */
-        }
-    
-        .hero {
-            height: 70vh; /* Ajustar la altura de la imagen */
-        }
-    
-        .quienes-somos {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-    
-        .servicios-grid {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .descripcion {
-            max-width: 80%; /* Reducir el tamaño de la descripción */
-            font-size: 1.1rem;
-        }
-    
-        .imagen {
-            max-width: 60%;
-            height: auto;
-        }
-    
-        .contact-button {
-            bottom: 10vh;
-            right: 5vh;
-            height: 10vh;
-            width: 20vh;
-        }
-    }
-
 }
 
 @media (min-width: 647px) and (max-width: 920px) and (orientation: landscape) {
+    /*MOVILES EN LANDSCAPE (VERTICAL)*/
     .navbar-superior {
         justify-content: space-around;
         font-size: 3vw;
@@ -411,5 +373,90 @@ a:hover{
         right: 5vh;
         width: fit-content;
         height: fit-content;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1050px) and (orientation: portrait) {
+    /*TABLETS*/
+    .navbar-superior {
+        justify-content: space-around;
+        font-size: 2.5vh;
+        background-color:red;
+    }
+
+    .hero {
+        height: 80vh; /* Reducir la altura */
+    }
+
+    .quienes-somos > p {
+        font-size: 3.5vw;
+    }
+
+    .quienes-somos {
+        padding: 5% 10%;
+        height: fit-content;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1%;
+        height: 90%;
+    }
+
+    .servicios > p {
+        font-size: 4.5vw;
+    }
+
+    .servicios-grid {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .descripcion {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .visitanos{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        margin-bottom: 4%;
+        height: fit-content;
+        
+    }
+
+    .imagen {
+        max-width: 40%;
+        height: 45vh;
+        margin: 2vh 0;
+    }
+
+    .img-ubicaciones{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .anchor-ubic{
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .img-ubicaciones > a >img{
+        height: 30vh;
+        width: 60vw;
+    }
+
+    .contact-button {
+        bottom: 13vh;
+        right: 4.6vh;
+        width: fit-content;
+        height: fit-content;
+        font-size: 3.7vw;
     }
 }
