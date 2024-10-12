@@ -165,7 +165,7 @@ a:hover{
 
 
 @media(max-width: 480px) {
-    /*Movil*/
+    /*MOVIL EN PORTRAIT (VERTICAL)*/
     .contact-button{
         position: fixed;
         bottom: 6vh; /* Distancia desde la parte inferior de la ventana */
@@ -262,7 +262,10 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top:5%;
+        padding-bottom: 2%;
         width: 100vw;
+        height: fit-content;
     }
     
     .nombre-ubicaciones{
@@ -276,9 +279,10 @@ a:hover{
     }
 
     .img-ubicaciones > a {
-        width: 80%;
-        height: 20vh;
-        justify-content: space-around;
+        display: flex;
+        width: 90%;
+        height: fit-content;
+        justify-content: center;
     }        
     
 
@@ -297,7 +301,7 @@ a:hover{
 }
 
 @media (min-width: 647px) and (max-width: 920px) and (orientation: landscape) {
-    /*MOVILES EN LANDSCAPE (VERTICAL)*/
+    /*MOVILES EN LANDSCAPE (HORIZONTAL)*/
     .navbar-superior {
         justify-content: space-around;
         font-size: 3vw;
@@ -359,6 +363,8 @@ a:hover{
     }
 
     .anchor-ubic{
+        display: flex;
+        justify-content: center;
         height: fit-content;
         width: fit-content;
     }
@@ -381,7 +387,6 @@ a:hover{
     .navbar-superior {
         justify-content: space-around;
         font-size: 2.5vh;
-        background-color:red;
     }
 
     .hero {
