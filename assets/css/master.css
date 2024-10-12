@@ -262,23 +262,32 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100vw;
     }
     
     .nombre-ubicaciones{
         display: flex;
         align-items:center;
-        justify-content: space-around;
+        justify-content: center;
     }
     
     .img-ubicaciones > h4{
         font-size: 5vw;
     }
 
+    .img-ubicaciones > a {
+        width: 80%;
+        height: 20vh;
+        justify-content: space-around;
+    }        
+    
+
     .img-ubicaciones{
         display: flex;
         flex-direction: column;
         align-items:center;
         justify-content: space-between;
+        width: 100%;
     }
 
     .web-hidden{
@@ -326,14 +335,14 @@ a:hover{
 
 }
 
-@media (min-width: 647px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 647px) and (max-width: 920px) and (orientation: landscape) {
     .navbar-superior {
         justify-content: space-around;
         font-size: 3vw;
     }
 
     .hero {
-        height: 40vh; /* Reducir la altura */
+        height: 80vh; /* Reducir la altura */
     }
 
     .quienes-somos > p {
@@ -341,18 +350,18 @@ a:hover{
     }
 
     .quienes-somos {
-        padding: 0 5%;
-        height: 20vh;
+        padding: 5% 10%;
+        height: fit-content;
     }
 
     .servicios > p {
         font-size: 4.5vw;
-        color:red;
     }
 
     .servicios-grid {
         flex-direction: row;
         align-items: center;
+        padding-bottom: 5%;
     }
 
     .descripcion {
@@ -360,15 +369,34 @@ a:hover{
         text-align: center;
     }
 
+    .visitanos{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        margin-bottom: 2%;
+    }
+
     .imagen {
         max-width: 40%;
-        height: auto;
+        height: 45vh;
         margin: 2vh 0;
     }
 
+    .img-ubicaciones{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .anchor-ubic{
+        height: fit-content;
+        width: fit-content;
+    }
+
     .contact-button {
-        bottom: 5vh;
-        right: 3vh;
-        width: 25vh;
+        bottom: 23vh;
+        right: 5vh;
+        width: fit-content;
+        height: fit-content;
     }
 }
