@@ -354,6 +354,14 @@ a:hover{
         height: fit-content;
     }
 
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        padding-bottom: 4%;
+        height: 90%;
+    }
+
     .servicios > p {
         font-size: 4.5vw;
     }
@@ -373,7 +381,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         gap: 5%;
-        margin-bottom: 2%;
+        margin-bottom: 4%;
     }
 
     .imagen {
@@ -391,6 +399,11 @@ a:hover{
     .anchor-ubic{
         height: fit-content;
         width: fit-content;
+    }
+
+    .img-ubicaciones > a >img{
+        height: 100vh;
+        width: 100vh;
     }
 
     .contact-button {
