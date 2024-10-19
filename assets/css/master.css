@@ -73,6 +73,7 @@ a:hover{
 .quienes-somos > p{
     font-size: 5.4vh;
     font-family: "Hammersmith One";
+    text-align: justify;
 }
 
 .quienes-somos{
@@ -107,6 +108,7 @@ a:hover{
 
 .descripcion{
     max-width: 50%;
+    text-align: justify;
 }
 
 .imagen{
