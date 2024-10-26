@@ -64,7 +64,6 @@ a:hover{
     z-index: 1000; 
 }
 
-
 .hero{
     width:100%;
     height: 85vh;
@@ -113,7 +112,6 @@ a:hover{
 }
 
 .imagen{
-    background-color: blue;
     max-width: 40vw;
     max-height: 50vh;
     min-width: 25vw;
@@ -157,7 +155,7 @@ a:hover{
     border-radius: 3rem; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor a mano */
     height: 11.5vh;
-    width: 29vh;
+    width: 35vh;
     transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
