@@ -36,7 +36,7 @@ a:hover{
     flex-direction: row;
     font-family: Poppins;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2.5vw;
     width: 100%;
     align-items: center;
     background-color: #151E3F;
@@ -53,7 +53,7 @@ a:hover{
     flex-direction: row;
     background-color: #151E3F;
     font-family: Poppins;
-    font-size: 1.5rem;
+    font-size: 1.5vh;
     font-weight: 300;
     margin: 0; 
     width: 100%;
@@ -88,7 +88,7 @@ a:hover{
 }
 
 .servicios > p{
-    font-size: 43px;
+    font-size: 7vh;
     font-family: "Open Sans";
 }
 
@@ -109,6 +109,7 @@ a:hover{
 .descripcion{
     max-width: 50%;
     text-align: justify;
+    font-size: 5vh;
 }
 
 .imagen{
@@ -191,9 +192,10 @@ a:hover{
     .navbar-superior{
         display: flex;
         position:fixed;
-        justify-content: flex-start;
+        justify-content: space-around;
+        font-weight: 200;
         flex-direction: row;
-        
+        font-size: 3vh;
         width: 100%;
     
         background-color: #151E3F;
@@ -302,11 +304,12 @@ a:hover{
 
 }
 
-@media (min-width: 647px) and (max-width: 920px) and (orientation: landscape) {
+@media (min-width: 647px) and (max-width: 930px) and (orientation: landscape) {
     /*MOVILES EN LANDSCAPE (HORIZONTAL)*/
     .navbar-superior {
         justify-content: space-around;
         font-size: 3vw;
+        font-weight: 300;
     }
 
     .hero {
@@ -384,11 +387,12 @@ a:hover{
     }
 }
 
-@media (min-width: 760px) and (max-width: 1050px) and (orientation: portrait) {
-    /*TABLETS*/
+@media (min-width: 760px) and (max-width: 1200px) and (orientation: portrait) {
+    /*TABLETS PORTRAIT (VERTICAL)*/
     .navbar-superior {
         justify-content: space-around;
-        font-size: 2.5vh;
+        font-size: 2vh;
+        font-weight: 300;
     }
 
     .hero {
@@ -412,7 +416,7 @@ a:hover{
     }
 
     .servicios > p {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
 
     .servicios-grid {
@@ -422,8 +426,9 @@ a:hover{
     }
 
     .descripcion {
-        font-size: 3vw;
+        font-size: 2.8vh;
         text-align: center;
+
     }
 
     .visitanos{
@@ -432,7 +437,6 @@ a:hover{
         gap: 5%;
         margin-bottom: 4%;
         height: fit-content;
-        
     }
 
     .imagen {
