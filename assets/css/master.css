@@ -6,7 +6,6 @@
     Mint Cream: #EBF5EE
     Spring green: #00FF7F
 */
-
 body{
     background-color: #030027;
     color:#ffffff;
@@ -36,7 +35,7 @@ a:hover{
     flex-direction: row;
     font-family: Poppins;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2.5vw;
     width: 100%;
     align-items: center;
     background-color: #151E3F;
@@ -53,26 +52,26 @@ a:hover{
     flex-direction: row;
     background-color: #151E3F;
     font-family: Poppins;
-    font-size: 1.5rem;
+    font-size: 1.5vh;
     font-weight: 300;
-    margin: 0; /* Cambié esto a 0 para evitar márgenes indeseados */
+    margin: 0; 
     width: 100%;
     color: white;
-    position: fixed; /* Para fijar la barra en la parte inferior */
-    bottom: 0; /* Para que esté pegada al fondo */
-    left: 0; /* Asegúrate de que esté alineada a la izquierda */
-    z-index: 1000; /* Para que esté por encima de otros elementos */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
-
 
 .hero{
     width:100%;
     height: 85vh;
 }
 
-.quienes-somos > h3{
-    font-size: 40px;
-    font-family: "Hammersmith One";
+.quienes-somos > p{
+    font-size: 5.4vh;
+    font-family: "Open Sans";
+    text-align: justify;
 }
 
 .quienes-somos{
@@ -86,8 +85,8 @@ a:hover{
     padding-right: 15%;
 }
 
-.servicios > h2{
-    font-size: 43px;
+.servicios > p{
+    font-size: 7vh;
     font-family: "Open Sans";
 }
 
@@ -107,11 +106,14 @@ a:hover{
 
 .descripcion{
     max-width: 50%;
+    text-align: justify;
+    font-size: 5vh;
 }
 
 .imagen{
-    background-color: blue;
-    max-width: 40%;
+    max-width: 40vw;
+    max-height: 50vh;
+    min-width: 25vw;
 }
 
 .visitanos{
@@ -152,7 +154,7 @@ a:hover{
     border-radius: 3rem; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor a mano */
     height: 11.5vh;
-    width: 29vh;
+    width: 35vh;
     transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
@@ -163,7 +165,7 @@ a:hover{
 
 
 @media(max-width: 480px) {
-
+    /*MOVIL EN PORTRAIT (VERTICAL)*/
     .contact-button{
         position: fixed;
         bottom: 6vh; /* Distancia desde la parte inferior de la ventana */
@@ -187,9 +189,10 @@ a:hover{
     .navbar-superior{
         display: flex;
         position:fixed;
-        justify-content: flex-start;
+        justify-content: space-around;
+        font-weight: 200;
         flex-direction: row;
-        
+        font-size: 3vh;
         width: 100%;
     
         background-color: #151E3F;
@@ -205,8 +208,8 @@ a:hover{
         height: 50vh;
     }
     
-    .quienes-somos > h3{
-        font-size: 5.5vw;
+    .quienes-somos > p{
+        font-size: 4.5vw;
     }
 
     .quienes-somos{
@@ -214,12 +217,12 @@ a:hover{
         align-items: center;
         align-content: space-evenly;
         width: 100%;
-        min-height: 20vh;
-        max-height:42vh;    
-        padding-top:1%;
+        height: fit-content;  
+
+        padding-top:5%;
     }
     
-    .servicios > h2{
+    .servicios > p{
         font-size: 9vw;
     }
 
@@ -228,8 +231,8 @@ a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 40vh;
-        max-height: 58vh;
+        height: fit-content;
+        margin-top: 0;
     }
     
     .servicios-grid{
@@ -251,7 +254,7 @@ a:hover{
         background-color: blue;
         min-width: 80%;
         min-height: 30%;
-        max-height: 50%;
+        max-height: 20vh;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
@@ -260,113 +263,208 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top:5%;
+        padding-bottom: 2%;
+        width: 100vw;
+        height: fit-content;
     }
     
     .nombre-ubicaciones{
         display: flex;
         align-items:center;
-        justify-content: space-around;
+        justify-content: center;
     }
     
     .img-ubicaciones > h4{
         font-size: 5vw;
     }
 
+    .img-ubicaciones > a {
+        display: flex;
+        width: 90%;
+        height: fit-content;
+        justify-content: center;
+    }        
+    
+
     .img-ubicaciones{
         display: flex;
         flex-direction: column;
         align-items:center;
         justify-content: space-between;
+        width: 100%;
     }
 
     .web-hidden{
         display: inline;
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .navbar-superior {
-            flex-direction: row;
-            justify-content: space-around;
-            font-size: 1.2rem; /* Ajustar el tamaño de fuente */
-        }
-    
-        .hero {
-            height: 70vh; /* Ajustar la altura de la imagen */
-        }
-    
-        .quienes-somos {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-    
-        .servicios-grid {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .descripcion {
-            max-width: 80%; /* Reducir el tamaño de la descripción */
-            font-size: 1.1rem;
-        }
-    
-        .imagen {
-            max-width: 60%;
-            height: auto;
-        }
-    
-        .contact-button {
-            bottom: 10vh;
-            right: 5vh;
-            height: 10vh;
-            width: 20vh;
-        }
+}
+
+@media (min-width: 647px) and (max-width: 930px) and (orientation: landscape) {
+    /*MOVILES EN LANDSCAPE (HORIZONTAL)*/
+    .navbar-superior {
+        justify-content: space-around;
+        font-size: 3vw;
+        font-weight: 300;
     }
 
-    @media (max-width: 767px) and (orientation: landscape) {
-        .navbar-superior {
-            justify-content: space-around;
-            font-size: 1rem;
-        }
-    
-        .hero {
-            height: 40vh; /* Reducir la altura */
-        }
-    
-        .quienes-somos > h3 {
-            font-size: 4.5vw;
-        }
-    
-        .quienes-somos {
-            padding: 0 5%;
-            height: auto;
-        }
-    
-        .servicios > h2 {
-            font-size: 7vw;
-        }
-    
-        .servicios-grid {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .descripcion {
-            font-size: 4vw;
-            text-align: center;
-        }
-    
-        .imagen {
-            max-width: 80%;
-            height: auto;
-            margin: 2vh 0;
-        }
-    
-        .contact-button {
-            bottom: 5vh;
-            right: 3vh;
-            width: 25vh;
-        }
+    .hero {
+        height: 80vh; /* Reducir la altura */
     }
-    
 
+    .quienes-somos > p {
+        font-size: 2.7vw;
+    }
+
+    .quienes-somos {
+        padding: 5% 10%;
+        height: fit-content;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        padding-bottom: 4%;
+        height: 90%;
+    }
+
+    .servicios > p {
+        font-size: 4.5vw;
+    }
+
+    .servicios-grid {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .descripcion {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .visitanos{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        margin-bottom: 4%;
+    }
+
+    .imagen {
+        max-width: 40%;
+        height: 45vh;
+        margin: 2vh 0;
+    }
+
+    .img-ubicaciones{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .anchor-ubic{
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .img-ubicaciones > a >img{
+        height: 100vh;
+        width: 100vh;
+    }
+
+    .contact-button {
+        bottom: 23vh;
+        right: 5vh;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1200px) and (orientation: portrait) {
+    /*TABLETS PORTRAIT (VERTICAL)*/
+    .navbar-superior {
+        justify-content: space-around;
+        font-size: 2vh;
+        font-weight: 300;
+    }
+
+    .hero {
+        height: 80vh; /* Reducir la altura */
+    }
+
+    .quienes-somos > p {
+        font-size: 3.5vw;
+    }
+
+    .quienes-somos {
+        padding: 5% 10%;
+        height: fit-content;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1%;
+        height: 90%;
+    }
+
+    .servicios > p {
+        font-size: 5.5vw;
+    }
+
+    .servicios-grid {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .descripcion {
+        font-size: 2.8vh;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .visitanos{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        margin-bottom: 4%;
+        height: fit-content;
+    }
+
+    .imagen {
+        max-width: 40%;
+        height: 45vh;
+        margin: 2vh 0;
+    }
+
+    .img-ubicaciones{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .anchor-ubic{
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .img-ubicaciones > a >img{
+        height: 30vh;
+        width: 60vw;
+    }
+
+    .contact-button {
+        bottom: 13vh;
+        right: 4.6vh;
+        width: fit-content;
+        height: fit-content;
+        font-size: 3.7vw;
+    }
 }
